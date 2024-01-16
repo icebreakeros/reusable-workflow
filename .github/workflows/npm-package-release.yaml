@@ -19,8 +19,6 @@ env:
 
 jobs:
   build:
-    if: github.event.pull_request.merged == true
-
     strategy:
       matrix:
         node-version: [16.x, 18.x, 20.x]
