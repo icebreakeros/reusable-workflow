@@ -14,14 +14,14 @@ on:
         required: true
 
 env:
-  NODE_VERSION: '20'
+  NODE_VERSION: '20.x'
   PACKAGE_VERSION_TYPE: 'patch'
 
 jobs:
   build:
     strategy:
       matrix:
-        node-version: [18, 20, 21]
+        node-version: [18.x, 20.x, 21.x]
         os: [ubuntu-latest, macos-latest]
 
     runs-on: ${{ matrix.os }}
